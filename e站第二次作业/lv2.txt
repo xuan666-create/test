@@ -1,0 +1,71 @@
+public class lv2 {
+    public static <For> void main(String[] args) {
+        String str1 = "acbdw 12695 47AasIDX";
+        System.out.println(str1.substring(0, 5));
+        System.out.println(str1.substring(6, 11));
+        System.out.println(str1.substring(12));
+
+        String result[] = str1.split("\\ ");
+        for (int a = 0; a < result.length; a++) {
+            System.out.print(result[a] + ",");}
+
+
+        For input;
+        String arr1="acbdw";
+        String arr2 = "12695";
+        String arr3 ="47AasIDX";
+        for (int b=0;b<arr1.length();b++) {
+            if (!Character.isDigit(str1.charAt(b))) ;
+
+            System.out.println("false");
+
+
+
+            }
+            for (int c = 0; c < arr2.length(); c++) {
+                if (!Character.isDigit(str1.charAt(c))) ;
+
+                    System.out.println("true");
+
+            }
+            for (int d = 0; d < arr2.length(); d++) {
+                if (!Character.isDigit(str1.charAt(d))) ;
+                {
+                    System.out.println("false");
+
+                }
+            }
+
+
+            System.out.println("将arr1中字母改为:" + "acbdw".toUpperCase());
+
+            System.out.println("将arr3中字母改为:" + "47AasIDX".toUpperCase());
+            char asc1[] = {'a','c','b','d','w',};
+                for (char i = 0; i < asc1.length; i++){
+                    for (char j = (char) (i+1); j < asc1.length; j++){
+                        if(asc1[i] > asc1[j]){
+                            char temp = asc1[i];
+                            asc1[i] = asc1[j];
+                            asc1[j] = temp;
+                        }
+                    }
+                }
+                System.out.println("排序后的数组1为：");
+                for (char num:asc1){
+                    System.out.println(num + " ");
+                }
+                {char acs2[] = {'4','7','A','a','s','I','D','X',};
+                    for (char i = 0; i < acs2.length; i++){
+                        for (char j = (char) (i+1); j < acs2.length; j++){
+                            if(acs2[i] > acs2[j]){
+                                char temp = acs2[i];
+                                acs2[i] = acs2[j];
+                                acs2[j] = temp;
+                            }
+                        }
+                    }
+                    System.out.println("排序后的数组2为：");
+                    for (char num:acs2){
+                        System.out.println(num + " ");
+                        }
+                    }}}
